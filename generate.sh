@@ -1,2 +1,2 @@
 #!/bin/bash
-./versionheadergenerator.py configuration/config.xml version.h
+./VersionHeaderGenerator.py configuration/config.xml

@@ -1,18 +1,29 @@
-<config path="../VersionHeaderGeneration">
+<project repository="." name="Example" destination="version.h">
 	<variables>
-		<major>1</major>
-		<minor>0</minor>
-		<patch>7</patch>
+		<major>(1)</major>
+		<minor>(0)</minor>
+		<patch>(0)</patch>
+		<description>"This is only small example of VersionHeaderGeneration tool"</description>
 	</variables>
 	<recipe>
-        <import path='./configuration/copyright' />
+		<import path="./configuration/copyright" />
+		<line />
+		<line>// This file was generated automatically by VersionHeaderGeneration tool</line>
+		<line>// The tool is avaliable on "https://github.com/mgorzkowski/VersionHeaderGenerator"</line>
 		<line />
 		<open-guard />
 		<line />
-		<define var='major' />
-		<define var='minor' />
-		<define var='patch' />
+		<define var="name" />
+		<define var="description" />
+		<line />
+		<define var="git_branch" />
+		<define var="git_revision_hash" />
+		<define var="git_short_revision_hash" />
+		<line />
+		<define var="major" />
+		<define var="minor" />
+		<define var="patch" />
 		<line />
 		<close-guard />
 	</recipe>
-</config>
+</project>
