@@ -11,7 +11,7 @@
 		<line>// This file was generated automatically by VersionHeaderGeneration tool</line>
 		<line>// The tool is avaliable on "https://github.com/mgorzkowski/VersionHeaderGenerator"</line>
 		<line />
-		<open-guard />
+		<open_guard />
 		<line />
 		<define var="name" />
 		<define var="description" />
@@ -20,10 +20,13 @@
 		<define var="git_revision_hash" />
 		<define var="git_short_revision_hash" />
 		<line />
+		<define var="generation_time" />
+		<define var="generation_date" />
+		<line />
 		<define var="major" />
 		<define var="minor" />
 		<define var="patch" />
 		<line />
-		<close-guard />
+		<close_guard />
 	</recipe>
 </project>
