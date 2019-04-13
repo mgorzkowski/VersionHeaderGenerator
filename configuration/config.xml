@@ -1,0 +1,18 @@
+<config path="../VersionHeaderGeneration">
+	<variables>
+		<major>1</major>
+		<minor>0</minor>
+		<patch>7</patch>
+	</variables>
+	<recipe>
+        <import path='./configuration/copyright' />
+		<line />
+		<open-guard />
+		<line />
+		<define var='major' />
+		<define var='minor' />
+		<define var='patch' />
+		<line />
+		<close-guard />
+	</recipe>
+</config>
