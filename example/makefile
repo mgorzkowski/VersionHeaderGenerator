@@ -1,4 +1,6 @@
 NAME=example
+SOURCE_FILE=example.c
+LIB=../version.h
 
 .PHONY: all build run clean
 
@@ -10,8 +12,13 @@ clean:
 	rm -f example
 
 run:
-	./example
+	./$(NAME)
 
-$(NAME): example.c
-	gcc $? -o $@
+remove-header:
+	rm -f $(LIB)
 
+$(NAME): $(SOURCE_FILE) $(LIB)
+	gcc $(SOURCE_FILE) -o $@
+
+$(LIB):
+	cd ..; ./generate.sh

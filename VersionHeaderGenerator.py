@@ -61,10 +61,10 @@ class VersionHeaderGenerator (object):
                                 result.append(VhgComponenet('import', item.attrib['path']))
                         elif item.tag == 'define':
                                 result.append(VhgComponenet('define', item.attrib['var']))
-                        elif item.tag == 'open-guard':
-                                result.append(VhgComponenet('open-guard'))
-                        elif item.tag == 'close-guard':
-                                result.append(VhgComponenet('close-guard'))
+                        elif item.tag == 'open_guard':
+                                result.append(VhgComponenet('open_guard'))
+                        elif item.tag == 'close_guard':
+                                result.append(VhgComponenet('close_guard'))
                 return result
 
         def generate(self):
