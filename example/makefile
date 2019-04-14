@@ -23,4 +23,4 @@ $(NAME): $(SOURCE_FILE) $(LIB)
 	$(CC) $(SOURCE_FILE) -o $@
 
 $(LIB):
-	cd ..; ./generate.sh
+	cd .. ; ./generate.sh

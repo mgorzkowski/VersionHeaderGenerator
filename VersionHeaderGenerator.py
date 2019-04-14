@@ -55,7 +55,11 @@ class VersionHeaderGenerator (object):
                 if vardir.get('generation_time') == None:
                         vardir['generation_time'] = '"' + time.strftime("%H:%M:%S") + '"'
                 if vardir.get('generation_date') == None:
-                        vardir['generation_date'] = '"' + time.strftime("%d/%m/%Y") + '"'
+                        vardir['generation_date'] = '"' + time.strftime("%b %d %Y") + '"'
+                if vardir.get('compilation_time') == None:
+                        vardir['compilation_time'] = '__TIME__'
+                if vardir.get('compilation_date') == None:
+                        vardir['compilation_date'] = '__DATE__'
                 return vardir
 
         def _parseRecipe(self):

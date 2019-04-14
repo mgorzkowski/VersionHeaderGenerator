@@ -22,6 +22,8 @@
 		<line />
 		<define var="generation_time" />
 		<define var="generation_date" />
+		<define var="compilation_time" />
+		<define var="compilation_date" />
 		<line />
 		<define var="major" />
 		<define var="minor" />
